@@ -1,4 +1,6 @@
-# Kick off httracker
-RewriteBase /
 RewriteCond %{HTTP_USER_AGENT} ^HTTrack [OR]
-RewriteRule ^.* – [F,L]
+RewriteCond %{HTTP_USER_AGENT} ^SiteSucker [OR]
+RewriteCond %{HTTP_USER_AGENT} ^WebZip [OR]
+RewriteCond %{HTTP_USER_AGENT} ^WebCopier [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Zeus
+RewriteRule ^.*$ no_download.html [L] 
