@@ -1,4 +1,3 @@
-AuthType Basic
-AuthName "Password Protected Area"
-AuthUserFile {PATH_TO_HTPASSWORD_FILE}
-Require valid-user
+RewriteBase /
+RewriteCond %{HTTP_USER_AGENT} ^HTTrack [OR]
+RewriteRule ^.* – [F,L]
